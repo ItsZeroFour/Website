@@ -1,0 +1,56 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 1.13em 2.1em;
+
+  background: $secondary;
+  border: none;
+  cursor: pointer;
+  border-radius: 3em;
+
+  font-family: inherit;
+  /*
+   С помощью rem мы наследуем и padding
+   Если будет увеличиваться шрифт,
+   то и padding тоже будет увеличиваться
+  */
+  font-size: 1.2rem;
+  line-height: 1.1;
+  font-weight: 500;
+  color: $white;
+  text-decoration: none;
+
+  &--red {
+    background-color: $red;
+    box-shadow: 0 7px 17px -10px rgba($red, 0.3);
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 7px 17px -10px rgba($red, 0.8);
+      // Затемнение
+      background-color: darken($red, 5%);
+    }
+  }
+
+  &--blue {
+    background-color: $blue;
+    box-shadow: 0 7px 17px -10px rgba($blue, 0.3);
+    transition: all 0.3s;
+
+    &:hover,
+    &:focus {
+      box-shadow: 0 7px 17px -10px rgba($blue, 0.8);
+      // Затемнение
+      background-color: darken($blue, 5%);
+    }
+  }
+
+  &-rounded {
+    border-radius: 0.41em;
+  }
+
+  &-sm--small {
+    padding: 0.7em 1.25em;
+  }
+}

@@ -1,0 +1,76 @@
+.profile {
+  margin-top: -5rem;
+
+  @include breakpoint($tablet-bp) {
+    margin-top: -1.4rem;
+  }
+}
+
+.profile__avatar {
+  /*
+    Задаем это значение, что бы
+    border аватарки не уходил под
+    фон
+  */
+  position: relative;
+  // Без display block не будет работать margin
+  display: block;
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto 2rem;
+  border: 2px solid $white;
+  box-shadow: 0 7px 20px rgba(#000000, 0.25);
+  border-radius: 50%;
+
+  @include breakpoint($tablet-bp) {
+    width: 6.5rem;
+    height: 6.5rem;
+
+    margin-left: 0;
+    position: absolute;
+    left: 0;
+  }
+}
+.profile__header {
+  margin-bottom: 2rem;
+  text-align: center;
+
+  @include breakpoint($tablet-bp) {
+    padding-top: 2.4rem;
+    padding-left: 6rem;
+    text-align: left;
+    font-size: 1rem;
+  }
+}
+
+.profile__name {
+  font-size: 1.8rem;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.5rem;
+  }
+}
+
+.profile__profession {
+  font-size: 1.4em;
+  font-weight: 300;
+  color: #dedede;
+
+  @include breakpoint($tablet-bp) {
+    font-size: 1.2rem;
+  }
+}
+
+.profile__text {
+  padding: 3rem 0;
+  margin: 3rem 0;
+  font-size: 1.2rem;
+  text-align: center;
+
+  border-top: 1px solid #1c1c1c;
+  border-bottom: 1px solid #1c1c1c;
+
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
+}

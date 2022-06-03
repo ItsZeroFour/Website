@@ -1,0 +1,37 @@
+.related {
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid #1c1c1c;
+}
+
+.related__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.related__list-item {
+  width: 50%;
+  margin-bottom: 2rem;
+}
+
+.related__list-title {
+  font-size: 1.55rem;
+  color: #f3eba2;
+  font-weight: 500;
+  // Если текст не вмещается, то будут стоять 3 точки
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+
+  a {
+    color: inherit;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.related__list-date {
+  font-size: 1.3rem;
+  color: #828282;
+}

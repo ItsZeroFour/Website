@@ -1,0 +1,206 @@
+.header-container {
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.header {
+  background-image: url(../images/Header/Header-background.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+
+.header__inner {
+  // Распологаем элементы вдоль страницы
+  display: flex;
+  justify-content: space-around;
+  // margin-top: 48px;
+  // min-height: calc(100vh - 100px);
+}
+
+.header__logo {
+  margin-top: 40px;
+  user-select: none;
+}
+
+.header__menu {
+  margin-left: auto;
+}
+
+.header__nav {
+  display: flex;
+  margin-top: 48px;
+}
+
+.header__list + .header__list {
+  // Делае отступы между элементами навигации
+  margin-left: 56px;
+}
+
+.header__list:last-child {
+  // Отступ от кнопки
+  margin-right: 300px;
+}
+
+.header__list > a {
+  color: #fff;
+  font-weight: 400;
+  transition: all 0.3s;
+}
+
+// Подчеркивание снизу
+.header__list > a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+.header__button {
+  margin-top: 48px;
+}
+
+// Стилизация ккнопки
+.header__button-link {
+  padding: 10px 30px;
+
+  background: linear-gradient(94.26deg, #c89afc 9.51%, #7c6afa 90.23%);
+  color: #fff;
+  font-weight: 400;
+  border-radius: 50px;
+  display: inline-block;
+}
+
+// main
+.header__main {
+  // Отступаем сверху
+  margin-top: 200px;
+}
+
+.header__main-title {
+  color: #fff;
+  // Задаем размер тексту
+  font-size: 64px;
+  max-width: 920px;
+}
+
+.header__main-blocks {
+  color: #fff;
+  // Позицианируем блоки в ряд
+  display: flex;
+  margin-top: 50px;
+}
+
+.header__main-block {
+  // Задаем форму и цвет блоку
+  background-color: $color-light-black;
+  width: 102px;
+  height: 112px;
+}
+
+.header__main-block {
+  // Отступаем сверзу на 30px
+  margin-right: 30px;
+  user-select: none;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__main-block--title {
+  font-size: 36px;
+  margin-top: 20px;
+}
+
+.header__main-block--text {
+  color: $color-dark-white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+// Header footer
+.header__footer {
+  height: 130px;
+  width: 100%;
+  background-color: $color-light-black;
+}
+
+.header__footer-inner {
+  display: flex;
+  justify-content: space-around;
+}
+
+.header__footer-button {
+  margin-top: 56px;
+}
+
+.header__footer-button--link {
+  padding: 10px 30px;
+  color: #ffffff;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+  border-radius: 50px;
+  align-self: center; 
+}
+
+.header__footer-students {
+  margin-top: 36px;
+}
+
+.header__footer-students--title {
+  color: $color-dark-white;
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.header__footer-students--count {
+  color: #fff;
+  font-size: 16px;
+  position: relative;
+  left: 220px;
+  bottom: 20px;
+}
+
+.header__footer-money {
+  margin-top: 40px;
+}
+
+// students money
+.header__footer-money-students {
+  color: #fff;
+  display: flex;
+}
+
+.header__footer-money--title {
+  color: $color-dark-white;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.header__footer-money--count {
+  margin-left: 30px;
+}
+
+// goal
+.header__footer-money--goal {
+  color: $color-dark-white;
+  font-weight: 400;
+  font-size: 16px;
+  display: flex;
+  justify-content: space-between;
+}
+
+// line
+.header__footer-money--line {
+  height: 6px;
+  width: 714px;
+  background-color: #fff;
+  position: relative;
+}
+
+// Создаем линию с градиентом
+.header__footer-money--line::before {
+  content: "";
+  position: absolute;
+  height: 6px;
+  width: 440px;
+  background: linear-gradient(94.78deg, #df5950 11.19%, #451046 93.72%);
+}

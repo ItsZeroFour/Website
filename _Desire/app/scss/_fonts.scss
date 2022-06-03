@@ -1,0 +1,16 @@
+// =====Exports fonts=====
+// Montserat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+// Open Sans
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap");
+
+// Global editing font
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 27px;
+  @extend %--color-gray !optional;
+  overflow-x: hidden;
+  min-width: 320px;
+}

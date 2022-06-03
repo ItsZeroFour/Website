@@ -1,0 +1,78 @@
+.add-post {
+  padding: 1.5rem 2rem;
+  // 30px
+  margin-bottom: 3rem;
+
+  background-color: $secondary;
+  box-shadow: 0 15px 25px rgba($black, 0.45);
+  border-radius: 5px;
+  user-select: none;
+}
+
+.add-post__form {
+  display: flex;
+  align-items: center;
+}
+
+.add-post__textarea {
+  display: block;
+  // Меняем размер текстового поля в зависимости от размера экрана
+  flex-grow: 1;
+  height: 26px;
+  overflow: hidden;
+  border: none;
+  background: transparent;
+  // Убираем возможность увеличивать размер
+  resize: none;
+
+  font-size: 15px;
+  color: $white;
+  font-family: inherit;
+
+  &::placeholder {
+    color: #d2d2d2;
+  }
+}
+
+.add-post__form-actions {
+  // Делаем для того, что бы они прижались вправо
+  // Задаем им остаточную ширину
+  width: 120px;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.add-post__file,
+.add-post__send {
+  display: block;
+  // 44px
+  width: 4.4rem;
+  height: 4.4rem;
+  cursor: pointer;
+  border-radius: 50%;
+  border: none;
+}
+
+.add-post__file {
+  background: #ebebeb url(../images/add-post/add-photo.svg) center no-repeat;
+  transition: background-color 0.2s linear;
+
+  input {
+    display: none;
+  }
+
+  &:hover {
+    background-color: darken(#ebebeb, 5%);
+  }
+}
+
+.add-post__send {
+  margin-left: 1.5rem;
+  background-color: $blue;
+  transition: background-color 0.2s linear;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+  }
+}

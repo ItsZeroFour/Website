@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.min.css" />
+    <title>Crypto wallet</title>
+  </head>
+  <body>
+    <div class="dashboard">
+      <div class="dashboard__nav">
+        <nav class="nav">
+          <div class="nav__logo">
+            <a class="logo" href="#">
+              <img src="./images/navIcons/Logo.svg" alt="Logo" />
+            </a>
+          </div>
+
+          <div class="nav__icons">
+            <ul class="nav__icons-list">
+              <li>
+                <a href="#">
+                  <img src="./images/navIcons/dashboard.svg" alt="dashboard" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./images/navIcons/Wallet.svg" alt="dashboard" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./images/navIcons/Statystic.svg" alt="dashboard" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./images/navIcons/Cube.svg" alt="dashboard" />
+                </a>
+              </li>
+
+              <li>
+                <a href="#">
+                  <img src="./images/navIcons/User.svg" alt="dashboard" />
+                </a>
+              </li>
+
+              <li class="nav__icons-list__last">
+                <a href="#">
+                  <img src="./images/navIcons/Exit.svg" alt="" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+      </div>
+
+      <div class="dashboard__body">
+        <!-- dashboard__header -->
+        <div class="dashboard__header">
+          <h1 class="dashboard__header-title title-1">Overview</h1>
+          <div class="dashboard__header-icons">
+            <button class="header-icon">
+              <img src="./images/Account/Search.svg" alt="search" />
+            </button>
+
+            <button class="header-icon header-icon__notification">
+              <img src="./images/Account/notification.svg" alt="notification" />
+            </button>
+
+            <div class="user-profile">
+              <a href="#" class="user-profile__avatar">
+                <img src="./images/Account/Avatar.svg" alt="Avatar" />
+              </a>
+              <button class="user-profile__nav-button">Zoia M.</button>
+            </div>
+          </div>
+        </div>
+        <!-- / dashboard__header -->
+
+        <!-- dashboard__cards -->
+        <div class="dashboard__cards">
+          <div class="portfolio">
+            <div class="portfolio__header">
+              <h2 class="title-2">Portfolio</h2>
+            </div>
+            <div class="portfolio__card">
+              <div class="balance-card">
+                <div class="balance-card__balance">
+                  <div class="balance-card__balance-value">$ 17 643.41</div>
+                  <div class="balance-card__balance-desc">
+                    Portfolio balance
+                  </div>
+                </div>
+
+                <button class="balance-card__settings">
+                  <div class="icon-show-more"></div>
+                </button>
+
+                <div class="balance-card__periods">
+                  <button class="balance-card__periods-button">1H</button>
+                  <button class="balance-card__periods-button">24H</button>
+                  <button class="balance-card__periods-button active">
+                    1W
+                  </button>
+                  <button class="balance-card__periods-button">1M</button>
+                  <button class="balance-card__periods-button">1Y</button>
+                  <button class="balance-card__periods-button">ALL</button>
+                </div>
+
+                <img
+                  class="balance-card__chard"
+                  src="./images/Graphicks/Graphick.svg"
+                  alt="Graphick"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="assets">
+            <div class="assets__header">
+              <h2 class="title-2">Your Assets</h2>
+              <button>
+                <img src="./images/Account/Settings.svg" alt="" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <!-- /dashboard__cards -->
+
+        <!-- dashboard__market -->
+        <div class="dashboard__market"></div>
+        <!-- /dashboard__market -->
+      </div>
+    </div>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>

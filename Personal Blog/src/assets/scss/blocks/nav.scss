@@ -1,0 +1,67 @@
+.nav {
+  @include breakpoint($tablet-bp) {
+    display: none;
+  }
+
+  &--mobile {
+    display: block;
+  }
+}
+
+.nav__list {
+  display: flex;
+  font-family: Roboto, sans-serif;
+
+  @include breakpoint($tablet-bp) {
+    flex-direction: column;
+  }
+}
+
+.nav__item {
+  position: relative;
+
+  &:hover {
+    .nav__link {
+      background-color: $blue;
+    }
+    > .subnav {
+      display: block;
+      background-color: $blue;
+
+      @include breakpoint($tablet-bp) {
+        // Выподющее меню не будет перекрывать другие блоки
+        position: static;
+        width: 100%;
+        padding-left: 1rem;
+
+        background-color: transparent;
+        box-shadow: none;
+      }
+    }
+  }
+  @include breakpoint($tablet-bp) {
+    &:hover {
+      .nav__link {
+        background: none;
+      }
+    }
+  }
+}
+
+.nav__link {
+  display: block;
+  padding: 1.35rem;
+
+  font-size: 1.1rem;
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: $white;
+  text-decoration: none;
+
+  transition: background-color 0.2s linear;
+
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

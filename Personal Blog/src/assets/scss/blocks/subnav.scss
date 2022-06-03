@@ -1,0 +1,36 @@
+.subnav {
+  font-family: "Roboto", sans-serif;
+  display: none;
+  // 165px
+  width: 16.5rem;
+  padding: 0.5rem 0;
+  background-color: $blue;
+  // Закруглям снизу
+  border-radius: 0 0 5px 5px;
+  box-shadow: 0 6px 8px rgba($black, 0.2);
+
+  position: absolute;
+  top: 100%;
+  left: 0;
+}
+
+.subnav__link {
+  display: block;
+  padding: 0.45rem;
+  color: $white;
+  font-size: 1.3rem;
+
+  transition: background-color 0.2s ease-in-out;
+
+  &:hover {
+    background-color: darken($blue, 5%);
+  }
+  @include breakpoint($tablet-bp) {
+    padding-left: 0;
+    padding-right: 0;
+
+    &:hover {
+      background: none;
+    }
+  }
+}

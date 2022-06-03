@@ -1,0 +1,73 @@
+// Modal
+.modal {
+  // Выравнивание по центру
+  // display: flex;
+  display: none;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba($black, 0.8);
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: $z-index-modal;
+}
+
+.modal__content {
+  width: 100%;
+  max-width: 50rem;
+  padding: 8rem;
+  position: relative;
+
+  background-color: $primary;
+  border-radius: 5px;
+}
+
+.modal__content-contact {
+  margin-bottom: 2.5rem;
+}
+
+// Button
+.modal__close {
+  padding: 0;
+  // Позицианируем относительно modal content
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  opacity: 0.5;
+  transition: transform 0.2s linear, opacity 0.2s linear;
+
+  &:hover {
+    transform: rotate(90deg);
+    opacity: 1;
+  }
+}
+
+// Footer
+.modal__footer {
+  display: flex;
+  justify-content: center;
+  margin-top: 4rem;
+
+  color: #b2b2b2;
+  font-size: 1.3rem;
+
+  li {
+    margin: 0 0.5rem;
+  }
+
+  a {
+    color: inherit;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// Video

@@ -1,0 +1,22 @@
+// imports
+@import "reset";
+@import "global";
+@import "fonts";
+@import "vars";
+@import "libs";
+// User web imports
+@import "src/header.scss";
+@import "src/footer.scss";
+@import "src/rightsidemenu.scss";
+@import "src/topslider.scss";
+@import "src/newcollection.scss";
+@import "src/decor.scss";
+@import "src/workspath.scss";
+@import "src/gallery.scss";
+@import "src/blog-box.scss";
+@import "src/breadcrumbs.scss";
+// about
+@import "src/about/about.scss";
+@import "src/about/inspiration.scss";
+@import "src/about/partners.scss";
+@import "src/contacts/contact.scss";

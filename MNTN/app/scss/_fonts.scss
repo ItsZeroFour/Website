@@ -1,0 +1,68 @@
+/*
+==================
+  --Gilroy--
+==================
+*/
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gillroy/Gilroy-ExtraBold.eot");
+  src: local("Gilroy ExtraBold"), local("Gilroy-ExtraBold"),
+    url("../fonts/Gillroy/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gillroy/Gilroy-ExtraBold.woff") format("woff"),
+    url("../fonts/Gillroy/Gilroy-ExtraBold.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gillroy/Gilroy-Medium.eot");
+  src: local("Gilroy Medium"), local("Gilroy-Medium"),
+    url("../fonts/Gillroy/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gillroy/Gilroy-Medium.woff") format("woff"),
+    url("../fonts/Gillroy/Gilroy-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Gilroy";
+  src: url("../fonts/Gillroy/Gilroy-Bold.eot");
+  src: local("Gilroy Bold"), local("Gilroy-Bold"),
+    url("../fonts/Gillroy/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Gillroy/Gilroy-Bold.woff") format("woff"),
+    url("../fonts/Gillroy/Gilroy-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+/*
+==================
+  --PlayFairDisplay--
+==================
+*/
+
+@font-face {
+	font-family: 'Playfair Display';
+	src: url('../fonts/PlayFairDisplay/PlayfairDisplay-Bold.eot');
+	src: local('Playfair Display Bold'), local('PlayfairDisplay-Bold'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplay-Bold.woff') format('woff'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplay-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Playfair Display SC';
+	src: url('../fonts/PlayFairDisplay/PlayfairDisplaySC-Bold.eot');
+	src: local('Playfair Display SC Bold'), local('PlayfairDisplaySC-Bold'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplaySC-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplaySC-Bold.woff') format('woff'),
+		url('../fonts/PlayFairDisplay/PlayfairDisplaySC-Bold.ttf') format('truetype');
+	font-weight: bold;
+	font-style: normal;
+}
+

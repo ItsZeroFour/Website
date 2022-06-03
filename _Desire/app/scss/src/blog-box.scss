@@ -1,0 +1,40 @@
+.blog-box {
+  padding-bottom: 100px;
+  &__title {
+    @extend %--color-black !optional;
+    @extend %--title-font !optional;
+    font-size: 36px;
+    line-height: 51px;
+    margin: 0 auto 30px;
+    text-align: center;
+    max-width: 430px;
+  }
+  &__img-link {
+    user-select: none;
+  }
+  &__items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 30px;
+  }
+  &__item-link {
+    display: inline-block;
+    margin-bottom: 19px;
+  }
+  &__links {
+    margin-bottom: 9px;
+    font-size: 14px;
+    @extend %--color-light-gray !optional;
+  }
+  &__date,
+  &__autor,
+  &__theme {
+    color: inherit;
+  }
+  &__item-title {
+    @extend %--color-black !optional;
+    font-size: 24px;
+    line-height: 38px;
+    @extend %--title-font !optional;
+  }
+}

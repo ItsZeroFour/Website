@@ -1,0 +1,45 @@
+// header__inner
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+  }
+
+  &__logo {
+    margin: 0 auto;
+    user-select: none;
+  }
+
+  &__btn {
+    background: transparent;
+    border: none;
+    user-select: none;
+    cursor: pointer;
+  }
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+// header menu
+.menu {
+  padding-right: 15px;
+  &__list {
+    display: flex;
+    user-select: none;
+  }
+  // Обращаемся к соседу
+  &__list-item {
+    padding-left: 35px;
+    padding-right: 45px;
+  }
+
+  &__list-link {
+    @extend %--title-font !optional;
+    color: rgba(54, 56, 56, 0.9033);
+    line-height: 22px;
+  }
+}

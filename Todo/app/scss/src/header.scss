@@ -1,0 +1,17 @@
+.header {
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+
+  &__text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 96px;
+  }
+
+  &__menu {
+    cursor: pointer;
+  }
+}

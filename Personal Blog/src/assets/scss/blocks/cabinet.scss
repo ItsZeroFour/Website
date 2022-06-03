@@ -1,0 +1,40 @@
+.cabinet {
+  display: flex;
+}
+
+.cabinet__form {
+  width: 34rem;
+
+  @media (max-width: $tablet-bp) {
+    
+  }
+}
+
+.cabinet__avatar {
+  flex-grow: 1;
+  padding-left: 11rem;
+
+  img {
+    display: block;
+    margin-bottom: 1.5rem;
+  }
+
+  @media (max-width: $tablet-bp) {
+  }
+}
+
+.cabinet__file {
+  font-size: 1.4rem;
+  color: #107eff;
+  text-decoration: underline;
+  cursor: pointer;
+  transition: text-decoration 0.3s ease-in;
+
+  &:hover {
+    text-decoration: none;
+  }
+
+  input {
+    display: none;
+  }
+}

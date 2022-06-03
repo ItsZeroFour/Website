@@ -1,0 +1,74 @@
+// Fonts
+%--title-font {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
+}
+
+// black
+%--color-black {
+  color: #363838;
+}
+
+// light-gray
+%--color-light-gray {
+  color: #707070;
+}
+
+// gray
+%--color-gray {
+  color: #5a5a5a;
+}
+
+// border
+%--border-color-gray {
+  border: 1px solid #454647;
+}
+
+// black border
+%--border-color-black {
+  border: 1px solid rgba(#383636, 0.7);
+}
+
+// yellow
+%--color-yellow {
+  color: #ffef35;
+}
+
+// white
+%--color-dark-white {
+  color: #fffff0;
+}
+
+// yellow background
+%--background-yellow {
+  background: #ffef35;
+}
+
+// white background
+%--background-white {
+  background: #dfdfdf;
+}
+
+// black background
+%--background-black {
+  background: #363838;
+}
+
+// border
+%--border-black {
+  height: 2px;
+  background: #6d7278;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+// =====Решение ошибки с fancybox=====
+@function max($numbers...) {
+  @return m#{a}x(#{numbers});
+}
+
+@function min($numbers...) {
+  @return m#{i}n(#{numbers});
+}

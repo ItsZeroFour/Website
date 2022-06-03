@@ -1,0 +1,292 @@
+body {
+  position: relative;
+  margin: 0;
+  background-color: #e5f2fe;
+  background-image: url(../images/background/lines-bg.svg);
+  font-family: "Poppins", sans-serif;
+}
+
+.icon-show-more {
+  position: relative;
+  @extend %dot-round;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -8px;
+    left: 0;
+    @extend %dot-round;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: -8px;
+    left: 0;
+    @extend %dot-round;
+  }
+}
+
+.active {
+  color: #040404 !important;
+}
+
+.dashboard {
+  position: fixed;
+  top: 40px;
+  bottom: 40px;
+  left: 40px;
+  right: 40px;
+
+  display: flex;
+
+  background: #202020;
+  border-radius: 34px;
+
+  &__nav {
+    // Что бы не стонавился меньше
+    flex-shrink: 0;
+
+    padding-top: 40px;
+    padding-bottom: 75px;
+    width: 138px;
+  }
+
+  &__body {
+    flex-grow: 1;
+
+    margin: 17px 19px 11px 0;
+    padding: 26px 56px 54px 68px;
+
+    background-color: #fff;
+    border-radius: 45px;
+  }
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 28px;
+
+    &-title {
+      font-weight: bold;
+      font-size: 35px;
+      line-height: 52px;
+
+      letter-spacing: 0.02em;
+    }
+
+    &-icons {
+      display: flex;
+
+      & > * + * {
+        margin-left: 16px;
+      }
+    }
+
+    &__cards {
+      display: flex;
+      justify-content: space-between;
+
+      & > * + * {
+        margin-left: 30px;
+      }
+    }
+  }
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  &__logo {
+    margin-bottom: 132px;
+    flex-shrink: 0;
+
+    text-align: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  &__icons {
+    flex-grow: 1;
+  }
+
+  &__icons {
+    flex-grow: 1;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+}
+
+ul.nav__icons-list {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+
+  li {
+    margin: 0;
+    padding: 0;
+    margin-bottom: 60px;
+
+    &.nav__icons-list__last {
+      margin-top: 90px;
+    }
+  }
+}
+
+.header-icon {
+  width: 48px;
+  height: 48px;
+  background-color: #f2f5fa;
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.2s ease-in;
+
+  &:hover {
+    background-color: rgb(241, 238, 238);
+  }
+
+  &__notification {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 50%;
+      left: 50%;
+      transform: translate(0%, -80%);
+
+      display: block;
+      width: 9px;
+      height: 9px;
+
+      background-color: #ff5e5e;
+      border-radius: 50%;
+      border: #fff solid 2px;
+    }
+  }
+}
+
+.user-profile {
+  height: 54px;
+  background-color: #f2f5fa;
+  border-radius: 27px;
+
+  display: flex;
+
+  &__avatar {
+    margin-top: -16px;
+    margin-left: 4px;
+    margin-right: 6px;
+  }
+
+  &__nav-button {
+    position: relative;
+    height: 54px;
+    background-color: #f2f5fa;
+    border-radius: 27px;
+
+    color: #0b1432;
+    padding-right: 41px;
+
+    &::after {
+      content: "";
+
+      position: absolute;
+      display: block;
+
+      right: 21px;
+      top: 50%;
+
+      transform: translateY(-50%);
+
+      background: url(../images/other/Down.svg);
+      width: 12px;
+      height: 7px;
+    }
+  }
+}
+
+.portfolio {
+  &__header {
+    margin-bottom: 24px;
+  }
+}
+
+.balance-card {
+  position: relative;
+  width: 486px;
+  height: 244px;
+  background-color: #e5f2fe;
+  border-radius: 24px;
+
+  padding: 26px 28px 25px 35px;
+
+  &__balance-value {
+    margin-bottom: 5px;
+    font-weight: 600;
+    font-size: 28px;
+
+    letter-spacing: 0.02em;
+  }
+
+  &__balance-desc {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+  }
+
+  &__settings {
+    position: absolute;
+    top: 37px;
+    right: 28px;
+
+    height: 20px;
+    width: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__periods {
+    position: absolute;
+    bottom: 25px;
+    left: 34px;
+
+    & > * + * {
+      margin-left: 24px;
+    }
+  }
+
+  &__periods-button {
+    font-size: 14px;
+    letter-spacing: 0.02em;
+    color: #acbccd;
+  }
+
+  &__chard {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 27px;
+  }
+}
+
+.assets {
+  flex-grow: 1;
+
+  &__header {
+    margin-bottom: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+}

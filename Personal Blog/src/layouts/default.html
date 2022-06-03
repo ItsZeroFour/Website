@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    {{> head }}
+  </head>
+  <body class="show-sidebar">
+    <div class="page">
+      <!-- Header -->
+      {{> header }}
+
+      <!-- Sidebar -->
+      {{> sidebar }}
+
+      <!-- Main -->
+      <main class="main">
+        <div class="container">{{> body }}</div>
+      </main>
+    </div>
+
+    {{> story-modal }}
+
+    <!-- JS -->
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

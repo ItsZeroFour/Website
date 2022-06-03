@@ -1,0 +1,186 @@
+---
+layout: default
+title: Post
+---
+
+<!-- Post -->
+<article class="post">
+  <div class="post__actions">
+    <a href="#">Вернуться назад</a>
+    <a href="#">
+      Поделиться<img
+        class="post__actions-icon"
+        src="./assets/images/post/Share.svg"
+        alt="Share"
+      />
+    </a>
+  </div>
+
+  <div class="post__header post__header--open">
+    <h2 class="post__title post__title--mb0">
+      Как я стал frontEnd разработчиком
+    </h2>
+
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">17.05.2022</time>
+      </li>
+      <li class="post-data__item">
+        <a href="#">Создание сайтов</a>
+      </li>
+    </ul>
+  </div>
+
+  <div class="post__content">
+    <div class="post__text">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi sint
+        accusamus iure. Obcaecati ducimus rerum, impedit, natus necessitatibus
+        vero, illum eaque quas explicabo cupiditate aspernatur et accusantium
+        iure maiores tempore hic rem dolorem. Fugit voluptatibus nulla obcaecati
+        quam explicabo molestiae ducimus, dignissimos laudantium. Adipisci ex,
+        numquam nihil earum atque quidem dignissimos natus quod amet ducimus
+        eius rem voluptas nesciunt dolore vero odio laboriosam modi dolor, optio
+        eum quo aliquid aut! Est eveniet ad, tempore necessitatibus quam
+        incidunt voluptate voluptatem dolore consectetur sed maxime numquam, at
+        autem, quos ex? Minus, deleniti?
+      </p>
+
+      <p>
+        <img src="./assets/images/post/Post-page-img-1.jpg" alt="post img" />
+      </p>
+
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero sint
+        quod assumenda blanditiis dolor fuga laborum, consequuntur, fugit ex
+        veniam, qui rem nesciunt! Ex adipisci voluptatibus in cupiditate
+        deleniti fugit rem voluptatem magni nesciunt quo ipsa, dolorum placeat
+        velit magnam sequi quia libero. Obcaecati error, natus corrupti
+        inventore eius laborum?
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+        repellendus inventore voluptatibus odit accusantium nostrum quod,
+        blanditiis culpa qui unde odio sed esse labore dolore fuga earum,
+        eligendi facere molestias? Dolore accusamus, nam provident ratione
+        quibusdam temporibus dolores eveniet? Assumenda blanditiis facere
+        tenetur animi ratione laudantium magnam laboriosam pariatur voluptas,
+        iusto earum ipsa eaque. Nisi quam libero numquam tempore iusto, delectus
+        suscipit eius nostrum, a nesciunt officia similique laborum cupiditate,
+        minima recusandae. Ex reprehenderit totam officiis. Sed ullam ipsum
+        aliquid.
+      </p>
+    </div>
+    <!-- post__text -->
+
+    <div class="related">
+      <h3 class="post__subtitle">Интересно почитать</h3>
+
+      <ul class="related__list">
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+          </h4>
+          <time class="related__list-date" datetime="21.09.2021 17:45">
+            21.09.2021
+          </time>
+        </li>
+
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как настроить компьютер и переустановить Windows</a>
+          </h4>
+          <time class="related__list-date" datetime="17.12.2021 14:15">
+            17.12.2021
+          </time>
+        </li>
+
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Купил новый ноутбук за 150 000 руб</a>
+          </h4>
+          <time class="related__list-date" datetime="30.04.2022 11:19">
+            30.04.2022
+          </time>
+        </li>
+
+        <li class="related__list-item">
+          <h4 class="related__list-title">
+            <a href="#">Как делать рокетджампы</a>
+          </h4>
+          <time class="related__list-date" datetime="25.05.2022 16:36">
+            25.05.2022
+          </time>
+        </li>
+      </ul>
+    </div>
+    <!-- Related -->
+
+    <h3 class="post__subtitle">Обсуждение</h3>
+
+    <form class="form" action="/" method="post">
+      <div class="form__group">
+        <textarea
+          class="form__controll form__controll-textarea"
+          name="comment-text"
+          placeholder="Текст комментария"
+        ></textarea>
+        <span class="form__line"></span>
+      </div>
+      <button class="btn btn--blue btn-rounded btn-sm--small" type="submit">
+        Отпраивть
+      </button>
+    </form>
+
+    <ul class="comments">
+      <li class="comments__item">
+        <div class="comments__header">
+          <img
+            class="comments__avatar"
+            src="./assets/images/post/comments/Avatar-1.jpg"
+            alt="Avatar"
+          />
+          <div class="comments__author">
+            <div class="comments__name">Антон Кудрявцев</div>
+            <time class="comments__pubdate" datetime="22.05.2022">
+              5 дней назад</time
+            >
+          </div>
+        </div>
+        <div class="comments__text">
+          Твои посты очень класснае, а этоа твоя статья просто бомба! Вперед!
+          Верь в себя, не сдавайся и у тебя все обязательно получится, верь в
+          свои мечты, не слушай никого, кто говорит тебе гадостей! Удачи тебе в
+          разработке сайтов!
+        </div>
+        <button class="comments__reply" type="button">ответить</button>
+      </li>
+
+      <ul class="comments">
+        <li class="comments__item">
+          <div class="comments__header">
+            <a href="#">
+              <img
+                class="comments__avatar"
+                src="./assets/images/post/comments/Avatar-2.jpg"
+                alt="Avatar"
+              />
+            </a>
+            <div class="comments__author">
+              <a href="#">
+                <div class="comments__name">Тимофей Карпов</div>
+              </a>
+              <time class="comments__pubdate" datetime="23.05.2022">
+                4 дня назад</time
+              >
+            </div>
+          </div>
+          <div class="comments__text">Яйца</div>
+          <button class="comments__reply" type="button">ответить</button>
+        </li>
+      </ul>
+    </ul>
+  </div>
+  <!-- /post__content -->
+</article>
+<!-- /Post -->

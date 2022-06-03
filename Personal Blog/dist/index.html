@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="assets/css/style.min.css">
+    
+    <!-- Useful meta tags -->
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="robots" content="index, follow">
+    <meta name="google" content="notranslate">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    
+    <title>Hello</title>
+  </head>
+  <body class="show-sidebar">
+    <div class="page">
+      <!-- Header -->
+      <header class="header">
+        <div class="header__left">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="../index.html">Главная</a>
+              </li>
+      
+              <li class="nav__item">
+                <a class="nav__link has-subnav" href="#">Статьи</a>
+      
+                <ul class="subnav">
+                  <li><a class="subnav__link" href="#">Создание сайтов</a></li>
+                  <li><a class="subnav__link" href="#">Интернет-маркетинг</a></li>
+                  <li><a class="subnav__link" href="#">Продвижение видео</a></li>
+                </ul>
+              </li>
+      
+              <li class="nav__item">
+                <a class="nav__link" href="../text.html">Обо мне</a>
+              </li>
+      
+              <li class="nav__item">
+                <a class="nav__link" href="#">Реклама</a>
+              </li>
+            </ul>
+          </nav>
+      
+          <button class="burger">
+            <span></span>
+          </button>
+      
+        </div>
+        <div class="header__right">
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__item">
+                <a class="nav__link" href="../profile.html">Профиль</a>
+              </li>
+      
+              <li class="nav__item">
+                <a class="nav__link" href="#">Выйти</a>
+              </li>
+            </ul>
+          </nav>
+          <form class="search" action="/" method="post">
+            <input class="search__input" type="text" placeholder="Поиск по блогу" />
+          </form>
+        </div>
+      </header>
+
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <div class="sidebar__header">
+          <img src="./assets/images/Sidebar/Background.jpg" alt="" />
+        </div>
+        <!-- Sidebar content -->
+        <div class="sidebar__content">
+          <div class="profile">
+            <img
+              class="profile__avatar"
+              src="./assets/images/Sidebar/Avatar-2.jpg"
+              alt="avatar"
+            />
+            <div class="profile__header">
+              <div class="profile__name">Александр Орлов</div>
+              <div class="profile__profession">блог front-end разработчика</div>
+            </div>
+      
+            <nav class="nav nav--mobile">
+              <ul class="nav__list">
+                <li class="nav__item">
+                  <a class="nav__link" href="../index.html">Главная</a>
+                </li>
+      
+                <li class="nav__item">
+                  <a class="nav__link has-subnav" href="#">Статьи</a>
+      
+                  <ul class="subnav subnav--mobile">
+                    <li>
+                      <a class="subnav__link" href="#">Создание сайтов</a>
+                    </li>
+                    <li>
+                      <a class="subnav__link" href="#">Интернет-маркетинг</a>
+                    </li>
+                    <li>
+                      <a class="subnav__link" href="#">Продвижение видео</a>
+                    </li>
+                  </ul>
+                </li>
+      
+                <li class="nav__item">
+                  <a class="nav__link" href="../text.html">Обо мне</a>
+                </li>
+      
+                <li class="nav__item">
+                  <a class="nav__link" href="#">Реклама</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <nav class="mobile__nav">
+              <ul>
+                <li>
+                  <a href="#">Главная</a>
+                </li>
+      
+                <li>
+                  <a href="#">Статьи</a>
+                </li>
+      
+                <li>
+                  <a href="#">Обо мне</a>
+                </li>
+      
+                <li>
+                  <a href="#">Реклама</a>
+                </li>
+              </ul>
+            </nav>
+      
+            <ul class="social">
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img src="./assets/images/social/instagram.svg" alt="instagram" />
+                </a>
+              </li>
+      
+              <li class="social__item">
+                <a class="social__link" href="#" target="_blank">
+                  <img src="./assets/images/social/pinterest.svg" alt="pinterest" />
+                </a>
+              </li>
+      
+              <li class="social__item">
+                <a
+                  class="social__link"
+                  href="https://vk.com/nullalexander"
+                  target="_blank"
+                >
+                  <img src="./assets/images/social/vk.svg" alt="vk" />
+                </a>
+              </li>
+            </ul>
+      
+            <div class="profile__text">
+              <p>
+                Front-end разработчик. Практик верстки сайтов. Созданием сайтов
+                занимаюсь с 2021 года. Работал в нескольких ИТ компаниях и наработал
+                более 2000 часов в создании сайтов различной сложности.
+              </p>
+            </div>
+          </div>
+          <!-- /Sidebar profile -->
+        </div>
+        <!-- /Sidebar content -->
+        <div class="sidebar__footer">
+          <a class="btn btn--red" href="#">Мои работы</a>
+          <button class="btn btn--blue" type="button">Написать мне</button>
+        </div>
+      </aside>
+
+      <!-- Main -->
+      <main class="main">
+        <div class="container">
+<!-- Stories -->
+<div class="stories">
+  <div class="stories__item">
+    <img
+      class="stories__preview"
+      src="./assets/images/stories/rocketjump.jpg"
+      alt="Stori"
+    />
+    <div class="stories__title">Учусь рокетджампить</div>
+    <time class="stories-date" datetime="2021-05-21 14:35">21.05.2022</time>
+  </div>
+
+  <div class="stories__item">
+    <img
+      class="stories__preview"
+      src="./assets/images/stories/project.jpg"
+      alt="Stori"
+    />
+    <div class="stories__title">Заканчиваю сложный проект</div>
+    <time class="stories-date" datetime="2022-06-17 19:21">17.04.2022</time>
+  </div>
+
+  <div class="stories__item">
+    <img
+      class="stories__preview"
+      src="./assets/images/stories/apartment.png"
+      alt="Stori"
+    />
+    <div class="stories__title">Переехал в новую квартиру</div>
+    <time class="stories-date" datetime="2021-12-21 13:17">25.12.2021</time>
+  </div>
+
+  <div class="stories__item">
+    <img
+      class="stories__preview"
+      src="./assets/images/stories/autumn.png"
+      alt="Stori"
+    />
+    <div class="stories__title">Осень пришла!</div>
+    <time class="stories-date" datetime="2021-09-01 11:01">01.09.2021</time>
+  </div>
+</div>
+<!-- /Stories -->
+
+<div class="add-post">
+  <form class="add-post__form" action="/" method="post">
+    <textarea
+      class="add-post__textarea"
+      name="post-name"
+      placeholder="Напишите что-нибудь"
+    ></textarea>
+
+    <div class="add-post__form-actions">
+      <label class="add-post__file" for="add-post-file">
+        <input id="add-post-file" type="file" />
+      </label>
+      <button class="add-post__send" type="submit">
+        <img src="./assets/images/add-post/send.svg" alt="send" />
+      </button>
+    </div>
+  </form>
+</div>
+
+<!-- Post -->
+<article class="post">
+  <div class="post__content">
+    <p class="post__description">
+      Рокет-джамп - популярный вид трюка в шутерах от первого лица, состоящий из
+      прыжка и одновременного выстрела из оружия, обладающего эффектом взрывной
+      волны, в ближайшую поверхность игрового мира, обычно себе под ноги. При
+      этом, теряя некоторое количество «здоровья», но получив дополнительное
+      ускорение от взрывной волны, игрок может оказаться в точке, недостижимой
+      никаким другим способом, либо набрать высокую горизонтальную скорость
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">22.05.2022</time>
+      </li>
+    </ul>
+  </div>
+</article>
+<!-- /Post -->
+
+<!-- Post -->
+<article class="post">
+  <div class="post__header post__header--preview">
+    <a href="#">
+      <img
+        class="post__preview"
+        src="./assets/images/post/post-1.jpg"
+        alt="Как писать код быстро и безболезненно?"
+      />
+    </a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">Как я стал frontEnd разработчиком</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tenetur quis
+      officiis mollitia asperiores facilis sit quidem magnam, recusandae ea
+      soluta a dignissimos in natus corporis eum repellendus ducimus ullam,
+      rerum delectus quas sequi fugit. Aperiam saepe sint possimus, assumenda
+      doloribus odio facilis culpa aut, nobis facere doloremque voluptatum natus
+      quisquam? Nobis harum, iure magnam dolore voluptatem suscipit vero numquam
+      mollitia.
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">22.05.2022</time>
+      </li>
+      <li class="post-data__item">
+        <a href="#">Рокет-джамп</a>
+      </li>
+    </ul>
+
+    <a class="post__read" href="#">читать</a>
+  </div>
+</article>
+<!-- /Post -->
+
+<!-- Post -->
+<article class="post">
+  <div class="post__header">
+    <div class="embed">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/KS8U5MQBjFo"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">Как настроить компьютер и переустановить Windows</a>
+    </h2>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">21.05.2022</time>
+      </li>
+      <li class="post-data__item">
+        <a href="#">продвижение видео</a>
+      </li>
+    </ul>
+
+    <a class="post__read" href="#">оставить комментарий</a>
+  </div>
+</article>
+<!-- /Post -->
+
+<!-- Post -->
+<article class="post">
+  <div class="post__header">
+    <a href="#">
+      <img
+        class="post__preview"
+        src="./assets/images/post/post-3.jpg"
+        alt="Как писать код быстро и безболезненно?"
+      />
+    </a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">Как я сходил на FrontEnd Conf 2021</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum
+      volutpat orci turpis urna. Et vestibulum, posuere tortor lacinia sit.
+      Sagittis porttitor orci auctor in at tincidunt arcu egestas. Fusce arcu
+      sodales lacinia eu auctor nunc nam id. Diam sit sed volutpat massa.
+      Egestas ornare vel volutpat.
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">17.05.2022</time>
+      </li>
+      <li class="post-data__item">
+        <a href="#">Создание сайтов</a>
+      </li>
+    </ul>
+
+    <a class="post__read" href="#">читать</a>
+  </div>
+</article>
+<!-- /Post -->
+
+<!-- Post -->
+<article class="post">
+  <div class="post__header">
+    <a href="#">
+      <img
+        class="post__preview"
+        src="./assets/images/post/post-4.jpg"
+        alt="Как писать код быстро и безболезненно?"
+      />
+    </a>
+  </div>
+  <div class="post__content">
+    <h2 class="post__title">
+      <a href="#">Продолжу верстать сайты после небольшого перерыва!</a>
+    </h2>
+    <p class="post__description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum unde ad
+      expedita dolore ducimus minus, atque perferendis dolorum at deserunt
+      possimus placeat quo fugiat impedit. Voluptatem minima illum maxime!
+      Impedit dolor eius corrupti commodi distinctio odio deserunt corporis
+      veritatis? Saepe, amet sint dolor, vero totam voluptas eaque pariatur
+      inventore enim tempore dolore id.
+    </p>
+  </div>
+
+  <div class="post__footer">
+    <ul class="post__data">
+      <li class="post-data__item">
+        <time date-time="22.05.2022 15:45">29.04.2022</time>
+      </li>
+      <li class="post-data__item">
+        <a href="#">Создание сайтов</a>
+      </li>
+    </ul>
+
+    <a class="post__read" href="#">читать</a>
+  </div>
+</article>
+<!-- /Post -->
+
+<!-- Pagination -->
+<ul class="pagination">
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&lt;</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">1</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link active" href="#">2</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">3</a>
+  </li>
+  <li class="pagination__item">
+    <a class="pagination__link" href="#">&gt;</a>
+  </li>
+</ul>
+
+</div>
+      </main>
+    </div>
+
+    <div class="modal">
+      <video class="modal__video" src="" poster="../assets/images/stories/rocketjump.jpg"></video>
+    </div>
+    <!-- JS -->
+    <script src="../assets/js/app.js"></script>
+  </body>
+</html>

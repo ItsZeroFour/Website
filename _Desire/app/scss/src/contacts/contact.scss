@@ -1,0 +1,136 @@
+// map
+.map {
+  margin-top: -53px;
+  margin-bottom: 50px;
+}
+
+// Contacts
+.contact {
+  padding-bottom: 100px;
+  &__title {
+    @extend %--color-black !optional;
+    @extend %--title-fort !optional;
+    font-size: 36px;
+    line-height: 60px;
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      height: 2px;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      width: 200px;
+      background: #6d7278;
+    }
+  }
+  .contact__social {
+    padding-left: 284px;
+    display: flex;
+    margin-bottom: 20px;
+  }
+
+  // Делаем + ..., что бы не обращаться к первому элементу
+  &__social-item + .contact__social-item {
+    padding-left: 40px;
+  }
+
+  &__phone {
+    @extend %--color-black !optional;
+  }
+
+  &__city {
+    margin-bottom: 16px;
+  }
+
+  &__box {
+    padding-left: 284px;
+  }
+
+  &__form {
+    padding-left: 284px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  &__form-input {
+    border: 1px solid #dfdfdf;
+    border-radius: 20px;
+    padding: 6px 17px;
+    margin-bottom: 13px;
+    width: 48%;
+    &::placeholder {
+      color: #a1a1a1;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  &__form-area {
+    width: 100%;
+    border: 1px solid #dfdfdf;
+    border-radius: 24px;
+    padding: 14px 17px;
+    min-height: 125px;
+    margin-bottom: 20px;
+    resize: none; /* Убираем возможность изменять размер в ручную */
+    &::placeholder {
+      color: #a1a1a1;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 27px;
+    }
+  }
+
+  &__form-btn {
+    border: none;
+    @extend %--background-black !optional;
+    color: #fffff0;
+    font-weight: 600;
+    border-radius: 21px;
+    padding: 6px 60px;
+    cursor: pointer;
+    margin-bottom: 100px;
+  }
+}
+
+// Slider
+.contact-slider {
+  &__link {
+    position: relative;
+    &:hover {
+      .contact-slider__title {
+        opacity: 1;
+      }
+    }
+  }
+  &__img {
+    width: 170px;
+    height: 170px;
+    object-fit: cover;
+  }
+  &__title {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgb(#fff, 0.6);
+    @extend %--color-black !optional;
+    @extend %--title-font !optional;
+    line-height: 22px;
+    padding: 0 10px;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.4s;
+  }
+}

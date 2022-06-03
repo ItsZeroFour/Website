@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Solar System</title>
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href="css/jquery.fancybox.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a class="logo" href="#"> 
+      <img class="header__logo" src="./images/logo.svg" alt="logo">
+    </a>
+    <h6 class="header__subtitle">Зеленый тариф для дома и бизнеса</h6>
+    <h1 class="header__title">Солнечная электростанция <span>c доходом от 1000 $ в месяц</span></h1>
+    <a class="header__button button" href="#">
+
+      <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="white" stroke-width="2" fill="transparent"/>
+      <path d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z" fill="white"/>
+      </svg>
+
+      <span class="button__text">записаться на консультацию</span></a>
+      <ul class="social">
+        <li class="social__item"><a href="#" class="social__link"><img src="images/instagram.svg" alt="Instagram" class="social__img"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/telegram.svg" alt="Telegram" class="social__img"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/whatsapp.svg" alt="WhatsApp" class="social__img"></a></li>
+        <li class="social__item"><a href="#" class="social__link"><img src="images/facebook.svg" alt="facebook" class="social__img"></a></li>
+      </ul>
+  </header>
+  <!-- ===Service=== -->
+  <section class="service">
+    <div class="container">
+      <h2 class="title">Услуги</h2>
+      <div class="service__inner">
+        <div class="service__content">
+          <h4 class="service__box-title">Полный комплект солнечной электростанции</h4>
+          <p class="sevice__box-text">74 модели солнечных панелей, 31 модель инверторов, провода с повышенной устойчивостью к атмосферным условиям, качественные соединители, контроллеры зарядов и надежные гелевые аккумуляторы с увеличенным сроком службы.</p>
+
+          <h4 class="service__box-title">Подбор оборудования 
+            с максимальной производительностью
+            </h4>
+          <p class="service__box-text">Подбираем солнечные панели с учетом расположения Вашего дома, количеством прямого и рассеянного излучения, для того, чтобы Ваша электростанция - вырабатывала максимальное количество электроэнергии и окупилась как можно быстрее.</p>
+
+          <h4 class="service__box-title">Монтаж оборудования в соответствии с ГОСТом</h4>
+          <p class="sevice__box-text">Монтаж производится в точном соответствии с ГОСТом, с учетом закона о «Зеленом тарифе» и требованиями Облэнерго. При этом, мы учитываем, чтобы солнечная станция имела максимально возможную производительность.</p>
+
+          <h4 class="service__box-title">Помощь в подключении к «Зеленому тарифу»</h4>
+          <p class="sevice__box-text">Всю бюрократическую процедуру по подключению Вашей электростанции к «Зеленому тарифу», мы берем на себя, в том числе по увеличению договорной мощности вашего дома. При заказе солнечной электростанции эта услуга абсолютно бесплатна.</p>
+        </div>
+        <img class="service__img" src="./images/solar.jpg" alt="solar" >
+      </div>
+    </div>
+  </section>
+
+  <!-- Info -->
+  <section class="info">
+    <div class="container">
+      <h2 class="title">Зеленый тариф</h2>
+      <div class="info__inner">
+        <div class="info__box">
+          <!-- Slider + tabs -->
+          <div class="info-tabs"> 
+            <div class="info-tabs__items">
+              <a class="info-tabs__item info-tabs__item--active" href="#tab-1">продажа</a>
+              <a class="info-tabs__item" href="#tab-2">закрепление</a>
+              <a class="info-tabs__item" href="#tab-3">ограницение</a>
+            </div>
+            <div class="info-tabs__contentbox">
+              <div class="info-tabs__content info-tabs__content--active" id="tab-1">
+                <div class="info-slider">
+                <div class="info-slider__item">
+                  <img class="info-slider__img" src="./images/house-1.jpg" alt="slider house">
+                  <p class="info-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                </div>
+
+                <div class="info-slider__item">
+                  <img class="info-slider__img" src="./images/house-1.jpg" alt="slider house">
+                  <p class="info-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                </div>
+
+                <div class="info-slider__item">
+                  <img class="info-slider__img" src="./images/house-1.jpg" alt="slider house">
+                  <p class="info-slider__text">Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</p>
+                </div>
+
+              </div>
+              <div class="info-tabs__content" id="tab-2">1 Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+              <div class="info-tabs__content" id="tab-3">2 Цена, по которой домохозяйства могут продать электроэнергию, более чем в 10 раз превышает цену, по которой они ее покупают для своих нужд — 0,16 Евро/кВт (продажа).</div>
+            </div>
+          </div>
+        </div>
+
+          <ul class="info__list">
+            <li class="info__list-item">
+              <h4 class="info__list-title">Гарантия выкупа</h4>
+              <p class="info__list-text">Гарантированный выкуп электроэнергии государством - прописано в НКРЕ №447 </p>
+            </li>
+            <li class="info__list-item">
+              <h4 class="info__list-title">Долгосрочно</h4>
+              <p class="info__list-text">это проект, поддерживаемый международными инвестиционными организациями</p>
+            </li>
+            <li class="info__list-item">
+              <h4 class="info__list-title">Вид вложения</h4>
+              <p class="info__list-text">Альтернатива банковским депозитам, окупаемость - от 16% до 18% годовых</p>
+            </li>
+            <li class="info__list-item">
+              <h4 class="info__list-title">Высокая ставка</h4>
+              <p class="info__list-text">Самая высокая тарифная ставка в европе - 0,16 евро</p>
+            </li>
+          </ul>
+        </div>
+        <div class="info__content">
+          <p class="info__content-text">«Зеленый тариф» — это особые тарифные условия,
+            которые позволяют частным домохозяйствам  не только потреблять, но и продавать
+            выработанное домашними солнечными электростанциями электричество в электросеть
+            общего пользования.</p>
+          <img class="info__content-img" src="./images/house-2.jpg" alt="house">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- blockquote -->
+  <blockquote class="blockquote">
+    <p class="blockquote__text">«Солнечная электростанция
+      — идеальное вложение средств
+      в свою энергонезависимость и
+      пассивный доход»</p>
+  </blockquote>
+
+  <!-- Clients -->
+  <section class="clients">
+    <div class="container">
+      <h2 class="title">Наши клиенты</h2>
+      <div class="clients-slider">
+      <div class="clients-slider__item">
+        <div class="client-slider__box">
+          <img class="client-slider__box-img" src="images/clients-house.jpg" alt="clients slider house">
+          <div class="clients-slider__box-content">
+            <h4 class="clients-slider__box-title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h4>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Расположение: Харьковская обл., г. Харьков</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Смонтирована: апрель 2017 г.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Срок службы: 25-30 лет</li>
+            </ul>
+
+            <a class="header__button button" href="#">
+
+              <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="black" stroke-width="2" fill="transparent"/>
+              <path d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z" fill="black"/>
+              </svg>
+        
+              <span class="button__text">записаться на консультацию</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients-slider__item">
+        <div class="client-slider__box">
+          <img class="client-slider__box-img" src="images/clients-house.jpg" alt="clients slider house">
+          <div class="clients-slider__box-content">
+            <h4 class="clients-slider__box-title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h4>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Расположение: Харьковская обл., г. Харьков</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Смонтирована: апрель 2017 г.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Срок службы: 25-30 лет</li>
+            </ul>
+
+            <a class="header__button button" href="#">
+
+              <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="black" stroke-width="2" fill="transparent"/>
+              <path d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z" fill="black"/>
+              </svg>
+        
+              <span class="button__text">записаться на консультацию</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="clients-slider__item">
+        <div class="client-slider__box">
+          <img class="client-slider__box-img" src="images/clients-house.jpg" alt="clients slider house">
+          <div class="clients-slider__box-content">
+            <h4 class="clients-slider__box-title">Солнечная электростанция 30 кВт подключенная по Зеленому Тарифу</h4>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Расположение: Харьковская обл., г. Харьков</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Чистый доход за вычетом налогов с мая 2017 г. по май 2019 г. 13 900 $.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Смонтирована: апрель 2017 г.</li>
+            </ul>
+
+            <ul class="clients-slider__box-list">
+              <li class="clients-slider__box-item">Срок службы: 25-30 лет</li>
+            </ul>
+
+            <a class="header__button button" href="#">
+
+              <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="black" stroke-width="2" fill="transparent"/>
+              <path d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z" fill="black"/>
+              </svg>
+        
+              <span class="button__text">записаться на консультацию</span></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- step -->
+<section class="step">
+  <div class="container">
+    <div class="step__inner">
+      <div class="step__content">
+      <h2 class="title">5 ШАГОВ К СОБСТВЕННОЙ ЭЛЕКТРОСТАНЦИИ</h2>
+      <ol class="step__list">
+        <li class="step__list-item">
+          <h4 class="step__list-title">
+            Заявка или звонок
+          </h4>
+          <p class="step__list-text">Оставляете заявку на нашем сайте или связываетесь с нами по телефону или в мессенджерах.</p>
+        </li>
+
+        <li class="step__list-item">
+          <h4 class="step__list-title">
+            Консультация и замер на объекте
+          </h4>
+          <p class="step__list-text">Мы просчитываем более 10- 15 вариантов солнечной станции на Вашем участке, чтобы предложить Вам один наиболее выгодный.</p>
+        </li>
+
+        <li class="step__list-item">
+          <h4 class="step__list-title">
+            Заключение договора
+          </h4>
+          <p class="step__list-text">Заключается договор, благодаря которому, вы будете застрахованы от некачественного оборудования и срыва сроков.</p>
+        </li>
+
+        <li class="step__list-item">
+          <h4 class="step__list-title">
+            Монтаж СЭС
+          </h4>
+          <p class="step__list-text">Наши специалисты производят монтаж солнечных батарей, проводки и инверторов, при необходимости изготавливают опоры.</p>
+        </li>
+
+        <li class="step__list-item">
+          <h4 class="step__list-title">
+            Получение дохода от государства
+          </h4>
+          <p class="step__list-text">После подключения к «Зеленому тарифу», вы получаете доход за каждый киловатт, выработанный на Вашей солнечной электростанции по зафиксированному тарифу на момент подключения.</p>
+        </li>
+      </ol>
+    </div>
+    <img class="step__img" src="./images/step house.jpg" alt="step house">
+  </div>
+</div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+  <div class="container">
+  <div class="footer__top">
+    <!-- Footer top -->
+    <form class="footer__form">
+      <h2 class="footer__title">ОСТАВИТЬ ЗАЯВКУ</h2>
+      <input class="footer__input" type="text" placeholder="Имя">
+      <input class="footer__input" type="tel" placeholder="Телефон">
+      <button class="footer__form-button button">
+
+        <svg width="101" height="100" viewBox="0 0 101 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path class="button__path" d="M99.0521 50C99.0521 77.0615 77.1029 99 50.026 99C22.9492 99 1 77.0615 1 50C1 22.9385 22.9492 1 50.026 1C77.1029 1 99.0521 22.9385 99.0521 50Z" stroke="white" stroke-width="2" fill="transparent"/>
+        <path d="M70.7434 50.7071C71.134 50.3166 71.134 49.6834 70.7434 49.2929L64.3795 42.9289C63.989 42.5384 63.3558 42.5384 62.9653 42.9289C62.5747 43.3195 62.5747 43.9526 62.9653 44.3431L68.6221 50L62.9653 55.6569C62.5747 56.0474 62.5747 56.6805 62.9653 57.0711C63.3558 57.4616 63.989 57.4616 64.3795 57.0711L70.7434 50.7071ZM30.0155 51H70.0363V49H30.0155V51Z" fill="white"/>
+        </svg>
+  
+        <span class="button__text">Оставить заявку</span></button>
+    </form>
+    <div class="footer__contacts">
+      <h2 class="footer__title">Контакты</h2>
+      <ul class="footer__contacts-list">
+        <li class="footer__contacts-item">Центральный офис:
+          г. Москва, ул,Гоголя 13, 1й этаж
+          </li>
+        <li class="footer__contacts-item">Представительство в Киеве:
+          г. Киев, ул. Є. Коновальця, 103 оф. 410</li>
+        <li class="footer__contacts-item">Представительства в Харькове, Одессе, Ростове, Сочи, Белгороде</li>
+        <li class="footer__contacts-item">
+          <a class="footer__phone" href="tel:79876545456">+7 987 654-54-56</a>
+          <br>
+          <a class="footer__phone" href="tel:380675043257">+38 067 504-32-57</a>
+        </li>
+        <li class="footer__contacts-item">Ежедневно 08:00 - 20:00</li>
+      </ul>
+    </div>
+  </div>
+  <!-- Footer bottom -->
+  <div class="footer__bottom">
+    <a class="footer__bottom-link" href="#">Политика конфеденциальности</a>
+    <a class="logo" href="#"> 
+      <img class="header__logo" src="./images/logo.svg" alt="logo">
+    </a>
+    <ul class="social">
+      <li class="social__item"><a href="#" class="social__link"><img src="images/instagram.svg" alt="Instagram" class="social__img"></a></li>
+      <li class="social__item"><a href="#" class="social__link"><img src="images/telegram.svg" alt="Telegram" class="social__img"></a></li>
+      <li class="social__item"><a href="#" class="social__link"><img src="images/whatsapp.svg" alt="WhatsApp" class="social__img"></a></li>
+      <li class="social__item"><a href="#" class="social__link"><img src="images/facebook.svg" alt="facebook" class="social__img"></a></li>
+    </ul>
+  </div>
+</div>
+</footer>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <script src="js/jquery.fancybox.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
